@@ -3,3 +3,6 @@ body {
     background-image: url(nyancat.jpeg);
 }
   
+div {
+    color: green
+}

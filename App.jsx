@@ -1,6 +1,6 @@
-const React = require("react");
-const TestComponent = require("./TestComponent")
-require("./App.css");
+import React from "react";
+import TestComponent from "./TestComponent"
+import "./App.css";
 
 const App = () => {
     return (
@@ -8,4 +8,4 @@ const App = () => {
     )
 }
 
-module.exports = App
+export default App;

@@ -1,6 +1,7 @@
-const React = require("react");
-const {createRoot} = require("react-dom/client");
-const App = require("./App");
+import React from "react";
+import {createRoot} from "react-dom/client";
+import App from './App.jsx';
+import './App.css';
 
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript

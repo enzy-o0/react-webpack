@@ -1,12 +1,14 @@
 const path = require('path');
-// const webpack = require('webpack');
+const webpack = require('webpack');
+const childProcess = require("child_process");
+
 const RefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
+const CopyPlugin = require("copy-webpack-plugin");
 
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
@@ -20,9 +22,7 @@ module.exports ={
     resolve: {
         extensions: ['.js', '.jsx'],
     },
-    entry: {
-        main: ['./main.js'],
-    }, // 입력
+    entry: './main.js', // 입력
     module: {
         rules: [{
             test: /\.(t|j)sx?$/, // js, jsx 파일에 rule 적용
@@ -44,14 +44,16 @@ module.exports ={
             }
         },
         {
-            test: /\.(sa|sc|c)ss$/,
+            test: /\.css$/i,
+            include: path.resolve(__dirname),
             exclude: /node_modules/,
             use: [
-                process.env.NODE_ENV === "production"
-                ? MiniCssExtractPlugin.loader
-                : "style-loader",
+                //process.env.NODE_ENV === "production"
+                //? 
+                MiniCssExtractPlugin.loader,
+                //: "style-loader",
                 "css-loader"
-            ]
+            ],
         },
         {
             test: /\.(png|jpg|gif|svg|jpeg|webp)$/,
@@ -80,7 +82,7 @@ module.exports ={
         new BundleAnalyzerPlugin(),
         new RefreshWebpackPlugin(),
         new HTMLWebpackPlugin({
-            template: "./index.html",
+            template: "index.html",
             templateParameters: {
                 env: process.env.NODE_ENV === "development" ? "(개발용)" : "",
             },
@@ -93,13 +95,30 @@ module.exports ={
                 false,
         }),
         new CleanWebpackPlugin(), // dist 파일 clean 후 재생성
-        ...(process.env.NODE_ENV === "production" // css나 javscript 파일을 하나로
-          ? [
-              new MiniCssExtractPlugin({
-                filename: "[name].css",
-              }),
-            ]
-          : []),
+        // ...(process.env.NODE_ENV === "production" // css나 javscript 파일을 하나로
+        //   ? [
+        //       new MiniCssExtractPlugin({
+        //         filename: "[name].[contenthash].css",
+        //         chunkFilename: "[id].[contenthash].css",
+        //    }),
+        //     ]
+        //   : []),
+        new MiniCssExtractPlugin(),
+          new webpack.BannerPlugin({
+            // 번들링된 상단 위에 빌드 정보 작성
+            // 상단에 주석처럼 사용하기 좋음
+            banner: `
+              Build Date: ${new Date().toLocaleString()}
+            `,
+          }),
+          new CopyPlugin({
+            patterns: [
+              {
+                from: "./node_modules/axios/dist/axios.min.js",
+                to: "./axios.min.js",
+              },
+            ],
+          }),
     ],
     optimization: {
         minimizer: 
@@ -114,16 +133,17 @@ module.exports ={
         },
     },
     output: {
-        path: path.resolve(__dirname, '/dist/'),
-        filename: '[name].js',
-        publicPath: '/dist/'
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].bundle.js',
+        clean: true,
+        // publicPath: '/dist'
     }, // 출력
     devServer: {
         devMiddleware: {
-            publicPath: '/dist/'
+            publicPath: '/'
         },
         static: {
-            directory: path.resolve(__dirname),
+            directory: path.join(__dirname, './dist'),
         },
         // hot: true,
         compress: true,
