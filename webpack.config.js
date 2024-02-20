@@ -79,7 +79,7 @@ module.exports ={
     plugins: [
         // 상단 module의 rules > options > plugin에 공통 옵션 
         // new webpack.LoaderOptionsPlugin({ debug: true }),
-        new BundleAnalyzerPlugin(),
+        process.env.NODE_ENV ===  "development" && new BundleAnalyzerPlugin(),
         new RefreshWebpackPlugin(),
         new HTMLWebpackPlugin({
             template: "index.html",
