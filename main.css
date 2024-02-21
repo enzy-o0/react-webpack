@@ -1,16 +1,21 @@
 /*!
  * 
- *               Build Date: 2/20/2024, 3:10:32 PM
+ *               Build Date: 2/21/2024, 1:44:26 PM
  *
  */
-/*!***********************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./App.css ***!
-  \***********************************************************/
+/*!***************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/App.css ***!
+  \***************************************************************/
+html,
 body {
-    background-color: green;
-    background-image: url(72b3432eb3c51320ae15.jpeg);
+  /* background-color: green;
+    background-image: url(./asset/snyancat.jpeg); */
+  width: 100%;
+  min-height: 100vh;
 }
-  
+
 div {
-    color: green
+  /* color: green; */
+  /* background-image: url(../assets/images/bg.jpg); */
 }
+

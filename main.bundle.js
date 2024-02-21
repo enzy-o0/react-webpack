@@ -1,6 +1,6 @@
 /*!
  * 
- *               Build Date: 2/20/2024, 3:10:32 PM
+ *               Build Date: 2/21/2024, 1:44:26 PM
  *
  */
 /*
@@ -14,27 +14,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./App.jsx":
-/*!*****************!*\
-  !*** ./App.jsx ***!
-  \*****************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _TestComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./TestComponent */ \"./TestComponent.jsx\");\n/* harmony import */ var _TestComponent__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_TestComponent__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.css */ \"./App.css\");\n/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ \"./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js\");\n__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ \"./node_modules/react-refresh/runtime.js\");\n\n\n\n\nconst App = () => {\n  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n    style: {\n      fontWeight: 'bold'\n    }\n  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((_TestComponent__WEBPACK_IMPORTED_MODULE_1___default()), null));\n};\n_c = App;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\nvar _c;\n__webpack_require__.$Refresh$.register(_c, \"App\");\n\nconst $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;\nconst $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(\n\t$ReactRefreshModuleId$\n);\n\nfunction $ReactRefreshModuleRuntime$(exports) {\n\tif (false) {}\n}\n\nif (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {\n\t$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);\n} else {\n\t$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);\n}\n\n//# sourceURL=webpack://react-webpack/./App.jsx?");
-
-/***/ }),
-
-/***/ "./TestComponent.jsx":
-/*!***************************!*\
-  !*** ./TestComponent.jsx ***!
-  \***************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ \"./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js\");\n__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ \"./node_modules/react-refresh/runtime.js\");\n\nvar _s = __webpack_require__.$Refresh$.signature();\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst {\n  useState,\n  useRef\n} = React;\nconst TestComponent = function () {\n  _s();\n  const [word, setWord] = useState('Webpack');\n  const [value, setValue] = useState('');\n  const [result, setResult] = useState('');\n  const inputRef = useRef(null);\n  const onSubmitForm = e => {\n    e.preventDefault();\n    if (word[word.length - 1] === value[0]) {\n      setResult('정답입니다');\n      setWord(value);\n      setValue(\"\");\n      inputRef.current.focus();\n    } else {\n      setResult('틀렸습니다');\n      setValue(\"\");\n      inputRef.current.focus();\n    }\n  };\n  const onChangeInput = e => {\n    setValue(e.target.value);\n  };\n  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(\"div\", null, word), /*#__PURE__*/React.createElement(\"form\", {\n    onSubmit: onSubmitForm\n  }, /*#__PURE__*/React.createElement(\"input\", {\n    ref: inputRef,\n    value: value,\n    onChange: onChangeInput\n  })), /*#__PURE__*/React.createElement(\"div\", null, result));\n};\n_s(TestComponent, \"qpZj2KAog06w3EPNX1HtmXGMS3M=\");\n_c = TestComponent;\nmodule.exports = TestComponent;\nvar _c;\n__webpack_require__.$Refresh$.register(_c, \"TestComponent\");\n\nconst $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;\nconst $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(\n\t$ReactRefreshModuleId$\n);\n\nfunction $ReactRefreshModuleRuntime$(exports) {\n\tif (false) {}\n}\n\nif (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {\n\t$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);\n} else {\n\t$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);\n}\n\n//# sourceURL=webpack://react-webpack/./TestComponent.jsx?");
-
-/***/ }),
-
 /***/ "./main.js":
 /*!*****************!*\
   !*** ./main.js ***!
@@ -42,18 +21,61 @@ eval("/* provided dependency */ var __react_refresh_utils__ = __webpack_require_
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _App_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.jsx */ \"./App.jsx\");\n/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./App.css */ \"./App.css\");\n/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ \"./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js\");\n__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ \"./node_modules/react-refresh/runtime.js\");\n\n\n\n\n\nconst container = document.getElementById('root');\nconst root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container); // createRoot(container!) if you use TypeScript\nroot.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_App_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n\n// ReactDom.render(<TestComponent />, document.querySelector(\"#root\"));\n\nconst $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;\nconst $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(\n\t$ReactRefreshModuleId$\n);\n\nfunction $ReactRefreshModuleRuntime$(exports) {\n\tif (false) {}\n}\n\nif (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {\n\t$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);\n} else {\n\t$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);\n}\n\n//# sourceURL=webpack://react-webpack/./main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react_dom_client__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\");\n/* harmony import */ var _src_App_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./src/App.jsx */ \"./src/App.jsx\");\n/* harmony import */ var _src_App_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./src/App.css */ \"./src/App.css\");\n/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ \"./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js\");\n__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ \"./node_modules/react-refresh/runtime.js\");\n\n\n\n\n\nconst container = document.getElementById('root');\nconst root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(container); // createRoot(container!) if you use TypeScript\nroot.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_src_App_jsx__WEBPACK_IMPORTED_MODULE_2__[\"default\"], null));\n\n// ReactDom.render(<TestComponent />, document.querySelector(\"#root\"));\n\nconst $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;\nconst $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(\n\t$ReactRefreshModuleId$\n);\n\nfunction $ReactRefreshModuleRuntime$(exports) {\n\tif (false) {}\n}\n\nif (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {\n\t$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);\n} else {\n\t$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);\n}\n\n//# sourceURL=webpack://react-webpack/./main.js?");
 
 /***/ }),
 
-/***/ "./App.css":
-/*!*****************!*\
-  !*** ./App.css ***!
-  \*****************/
+/***/ "./src/App.jsx":
+/*!*********************!*\
+  !*** ./src/App.jsx ***!
+  \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://react-webpack/./App.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _components_TestComponent__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/TestComponent */ \"./src/components/TestComponent.jsx\");\n/* harmony import */ var _components_TestComponent__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_components_TestComponent__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _App_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./App.css */ \"./src/App.css\");\n/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ \"./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js\");\n__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ \"./node_modules/react-refresh/runtime.js\");\n\n\n\n\nconst App = () => {\n  return (\n    /*#__PURE__*/\n    // kelly-sikkema-4JxV3Gs42Ks-unsplash\n    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"div\", {\n      style: {\n        // backgroundImage: \"url(./assets/images/bg.jpg)\",\n        backgroundImage: `linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255)), url('${__webpack_require__(/*! ../assets/images/bg.jpg */ \"./assets/images/bg.jpg\")}')`,\n        backgroundRepeat: \"no-repeat\",\n        backgroundSize: \"cover\",\n        width: \"100vw\",\n        minHeight: \"100%\",\n        display: \"flex\",\n        alignItems: \"center\",\n        justifyContent: \"center\",\n        flexDirection: \"column\"\n      }\n    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(\"h1\", null, \"\\uB05D\\uB9D0\\uC787\\uAE30\"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((_components_TestComponent__WEBPACK_IMPORTED_MODULE_1___default()), null))\n  );\n};\n_c = App;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\nvar _c;\n__webpack_require__.$Refresh$.register(_c, \"App\");\n\nconst $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;\nconst $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(\n\t$ReactRefreshModuleId$\n);\n\nfunction $ReactRefreshModuleRuntime$(exports) {\n\tif (false) {}\n}\n\nif (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {\n\t$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);\n} else {\n\t$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);\n}\n\n//# sourceURL=webpack://react-webpack/./src/App.jsx?");
+
+/***/ }),
+
+/***/ "./src/components/TestComponent.jsx":
+/*!******************************************!*\
+  !*** ./src/components/TestComponent.jsx ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("/* provided dependency */ var __react_refresh_utils__ = __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ \"./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js\");\n__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! ./node_modules/react-refresh/runtime.js */ \"./node_modules/react-refresh/runtime.js\");\n\nvar _s = __webpack_require__.$Refresh$.signature();\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\nconst {\n  useState,\n  useRef\n} = React;\nconst SearchIcon = __webpack_require__(/*! ../../assets/icons/search.svg */ \"./assets/icons/search.svg\");\nconst TestComponent = function () {\n  _s();\n  const [word, setWord] = useState(\"웹팩\");\n  const [value, setValue] = useState(\"\");\n  const [resultText, setResultText] = useState(\"\");\n  const [result, setResult] = useState([]);\n  const inputRef = useRef(null);\n  const onSubmitForm = e => {\n    e.preventDefault();\n    const isDuplicated = result.find(word => value === word);\n    if (!isDuplicated && word[word.length - 1] === value[0]) {\n      setResultText(\"정답입니다\");\n      setWord(value);\n      const resultArr = [...result];\n      resultArr.push(value);\n      setResult(resultArr);\n      setValue(\"\");\n      inputRef.current.focus();\n    } else {\n      setResultText(\"틀렸습니다\");\n      setValue(\"\");\n      inputRef.current.focus();\n    }\n  };\n  const onChangeInput = e => {\n    setValue(e.target.value);\n  };\n  return /*#__PURE__*/React.createElement(\"div\", {\n    style: {\n      textAlign: \"center\",\n      marginTop: \"2rem\"\n    }\n  }, /*#__PURE__*/React.createElement(\"p\", null, \"\\uB9C8\\uC9C0\\uB9C9\\uC73C\\uB85C \\uC785\\uB825\\uB41C \\uB2E8\\uC5B4\"), /*#__PURE__*/React.createElement(\"p\", null, word), /*#__PURE__*/React.createElement(\"form\", {\n    onSubmit: onSubmitForm\n  }, /*#__PURE__*/React.createElement(\"div\", {\n    style: {\n      borderRadius: \"30px\",\n      padding: \"0.5rem 2rem\",\n      width: \"500px\",\n      margin: \"2rem 0\",\n      display: \"flex\",\n      justifyContent: \"space-between\",\n      alignItems: \"center\",\n      boxShadow: \"0px 5px 24.3px 2.7px rgba(0, 0, 0, 0.09)\"\n    }\n  }, /*#__PURE__*/React.createElement(\"img\", {\n    src: SearchIcon,\n    alt: \"\\uAC80\\uC0C9 \\uC544\\uC774\\uCF58\",\n    width: 20,\n    height: 20\n  }), /*#__PURE__*/React.createElement(\"input\", {\n    ref: inputRef,\n    value: value,\n    onChange: onChangeInput,\n    style: {\n      border: \"none\",\n      width: \"100%\",\n      margin: \"0 1rem\",\n      background: \"transparent\"\n    }\n  }), /*#__PURE__*/React.createElement(\"button\", {\n    style: {\n      backgroundColor: \"#e0462e\",\n      color: \"#fff\",\n      borderRadius: \"30px\",\n      padding: \"0.5rem 2rem\",\n      border: \"none\"\n    }\n  }, \"search\"))), /*#__PURE__*/React.createElement(\"p\", null, resultText), /*#__PURE__*/React.createElement(\"div\", {\n    style: {\n      padding: \"1rem 0.5rem\",\n      margin: \"2rem 0\",\n      maxWidth: \"500px\",\n      overflow: \"scroll\"\n    }\n  }, /*#__PURE__*/React.createElement(\"ul\", {\n    style: {\n      display: \"grid\",\n      gridTemplateColumns: \"1fr 1fr 1fr\",\n      justifyContent: \"flex-start\",\n      rowGap: \"1rem\",\n      textAlign: \"center\"\n    }\n  }, result.map(e => {\n    return /*#__PURE__*/React.createElement(\"li\", {\n      style: {\n        border: \"1px solid #edecef\",\n        borderRadius: \"10px\",\n        padding: \"0.3rem\",\n        listStyle: \"none\",\n        margin: \"0 1rem\"\n      }\n    }, \"#\", e);\n  }))));\n};\n_s(TestComponent, \"ZtSgvrYDfRGtEBrolnDQvLScHPc=\");\n_c = TestComponent;\nmodule.exports = TestComponent;\nvar _c;\n__webpack_require__.$Refresh$.register(_c, \"TestComponent\");\n\nconst $ReactRefreshModuleId$ = __webpack_require__.$Refresh$.moduleId;\nconst $ReactRefreshCurrentExports$ = __react_refresh_utils__.getModuleExports(\n\t$ReactRefreshModuleId$\n);\n\nfunction $ReactRefreshModuleRuntime$(exports) {\n\tif (false) {}\n}\n\nif (typeof Promise !== 'undefined' && $ReactRefreshCurrentExports$ instanceof Promise) {\n\t$ReactRefreshCurrentExports$.then($ReactRefreshModuleRuntime$);\n} else {\n\t$ReactRefreshModuleRuntime$($ReactRefreshCurrentExports$);\n}\n\n//# sourceURL=webpack://react-webpack/./src/components/TestComponent.jsx?");
+
+/***/ }),
+
+/***/ "./src/App.css":
+/*!*********************!*\
+  !*** ./src/App.css ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://react-webpack/./src/App.css?");
+
+/***/ }),
+
+/***/ "./assets/icons/search.svg":
+/*!*********************************!*\
+  !*** ./assets/icons/search.svg ***!
+  \*********************************/
+/***/ ((module) => {
+
+"use strict";
+eval("module.exports = \"data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY29sb3I9IiMwMDAwMDAiPjxwYXRoIGQ9Ik0xNyAxN0wyMSAyMSIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48L3BhdGg+PHBhdGggZD0iTTMgMTFDMyAxNS40MTgzIDYuNTgxNzIgMTkgMTEgMTlDMTMuMjEzIDE5IDE1LjIxNjEgMTguMTAxNSAxNi42NjQ0IDE2LjY0OTNDMTguMTA3NyAxNS4yMDIyIDE5IDEzLjIwNTMgMTkgMTFDMTkgNi41ODE3MiAxNS40MTgzIDMgMTEgM0M2LjU4MTcyIDMgMyA2LjU4MTcyIDMgMTFaIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPjwvcGF0aD48L3N2Zz4=\";\n\n//# sourceURL=webpack://react-webpack/./assets/icons/search.svg?");
+
+/***/ }),
+
+/***/ "./assets/images/bg.jpg":
+/*!******************************!*\
+  !*** ./assets/images/bg.jpg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+eval("module.exports = __webpack_require__.p + \"469389f51f3a50004690.jpg\";\n\n//# sourceURL=webpack://react-webpack/./assets/images/bg.jpg?");
 
 /***/ })
 
@@ -190,6 +212,29 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/react refresh */
