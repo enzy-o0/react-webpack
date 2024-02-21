@@ -1,0 +1,12 @@
+html,
+body {
+  /* background-color: green;
+    background-image: url(./asset/snyancat.jpeg); */
+  width: 100%;
+  min-height: 100vh;
+}
+
+div {
+  /* color: green; */
+  /* background-image: url(../assets/images/bg.jpg); */
+}
